@@ -3,6 +3,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import HomeScreen from './HomeScreen';
 import TransactionScreen from './TransactionScreen';
+import IBANScreen from './IBANScreen';
 import { TransactionProvider } from './TransactionContext';
 const Stack = createNativeStackNavigator();
 const App = () => {
@@ -12,6 +13,7 @@ const App = () => {
         <Stack.Navigator>
           <Stack.Screen name="Home" component={HomeScreen} />
           <Stack.Screen name="Transaction" component={TransactionScreen} />
+          <Stack.Screen name="IBans" component={IBANScreen} />
         </Stack.Navigator>
       </NavigationContainer>
     </TransactionProvider>

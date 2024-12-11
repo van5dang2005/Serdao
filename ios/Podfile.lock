@@ -1055,6 +1055,8 @@ PODS:
     - React-jsi (= 0.73.5)
     - React-logger (= 0.73.5)
     - React-perflogger (= 0.73.5)
+  - RNCAsyncStorage (2.1.0):
+    - React-Core
   - RNCPicker (2.6.1):
     - React-Core
   - RNScreens (3.35.0):
@@ -1117,6 +1119,7 @@ DEPENDENCIES:
   - React-runtimescheduler (from `../node_modules/react-native/ReactCommon/react/renderer/runtimescheduler`)
   - React-utils (from `../node_modules/react-native/ReactCommon/react/utils`)
   - ReactCommon/turbomodule/core (from `../node_modules/react-native/ReactCommon`)
+  - "RNCAsyncStorage (from `../node_modules/@react-native-async-storage/async-storage`)"
   - "RNCPicker (from `../node_modules/@react-native-picker/picker`)"
   - RNScreens (from `../node_modules/react-native-screens`)
   - Yoga (from `../node_modules/react-native/ReactCommon/yoga`)
@@ -1225,6 +1228,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon/react/utils"
   ReactCommon:
     :path: "../node_modules/react-native/ReactCommon"
+  RNCAsyncStorage:
+    :path: "../node_modules/@react-native-async-storage/async-storage"
   RNCPicker:
     :path: "../node_modules/@react-native-picker/picker"
   RNScreens:
@@ -1283,6 +1288,7 @@ SPEC CHECKSUMS:
   React-runtimescheduler: 23cacc34a0a2b0b17fbd4262c5f0f8dcf3fb7903
   React-utils: c89ba7cfbcc24a54c229928aa971a2539f5bdc21
   ReactCommon: 878d3e9687f81294648a1d025b91ecde7e22179e
+  RNCAsyncStorage: c91d753ede6dc21862c4922cd13f98f7cfde578e
   RNCPicker: 7ea4c112b43a2033ddb1e5e2ecb2e826f222b897
   RNScreens: 30e365555fd36db9d8ede5542127e3d25e8f904e
   SocketRocket: f32cd54efbe0f095c4d7594881e52619cfe80b17

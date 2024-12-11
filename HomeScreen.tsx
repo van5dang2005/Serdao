@@ -6,13 +6,13 @@ const HomeScreen = ({ navigation }) => {
   const { transactions, balance } = useTransactions();
 
   const renderItem = ({ item }) => (
-    <View style={styles.item}>
+    <View style={styles.item} key={item.id}>
       <Text style={styles.itemText}>Transaction ID: {item.id}</Text>
       <Text style={styles.itemText}>Amount: ${item.amount.toFixed(2)}</Text>
       {item.account && (
         <>
-          <Text style={styles.itemText}>To: {item.account.name}</Text>
-          <Text style={styles.itemText}>IBAN: {item.account.iban}</Text>
+          <Text style={styles.itemText}>To: {item.account.IBAN_Name}</Text>
+          <Text style={styles.itemText}>IBAN: {item.account.IBAN_ID}</Text>
         </>
       )}
     </View>
@@ -24,6 +24,10 @@ const HomeScreen = ({ navigation }) => {
       <Button
         title="Add Transaction"
         onPress={() => navigation.navigate('Transaction')}
+      />
+      <Button
+        title="List IBANs"
+        onPress={() => navigation.navigate('IBans')}
       />
       <FlatList
         data={transactions}
